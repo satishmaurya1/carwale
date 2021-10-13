@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&display=swap');
+
+:root{
+    --blue: #2b5bfa;
+    --light-blue: #7d8ff1;
+    --black:rgb(48, 46, 46);
+    --lightblack: rgb(145, 137, 137);
+    --border: 1rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+*{
+    font-family: 'Crimson Pro', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 300rem;
+}
+
+
+/* ---------------header---------------- */
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 666;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 9%;
+}
+
+.header.active{
+    box-shadow: var(--box-shadow);
+    padding: 2rem 9%;
+    
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: bolder;
+}
+
+.header .logo span{
+    color: var(--blue);
+
+}
+
+
+.header .navbar a{
+    margin: 0 1rem;
+   font-size: 1.7rem;
+   color: var(--black);
+}
+
+.header .navbar a:hover{
+    color: var(--blue);
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background: var(--light-blue);
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.7rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+
+}
+.btn:hover{
+    background: var(--blue);
+}
+
+.header .btn{
+    margin-top: 0;
+
+}
+
+.header #login-btn i{
+    color: var(--lightblack);
+    cursor: pointer;
+    font-size: 2.5rem;
+    display: none;
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--lightblack);
+    display: none;
+}
+
+
+@media (max-width:992px) {
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:766px) {
+    .header #login-btn i{
+          display: block;
+    }
+    .header #login-btn .btn{
+          display: none;
+    }
+}
+
+
+@media (max-width:600px) {
+    .header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        border-top: var(--border);
+        clip-path: polygon(0 0,100% 0,0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+    }
+
+    .header .navbar a{
+        display: block;
+      
+        padding: 1.2rem 0;
+        font-size: 2rem;
+    }
+
+    #menu-btn{
+        display: block;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
+
+}
+
+
+@media (max-width:440px) {
+    html{
+        font-size: 50%;
+    }
+}
