@@ -40,3 +40,19 @@ closeform.addEventListener("click",()=>{
     loginform.classList.remove('active')
 })
 
+
+
+// ---------------home-----------------
+
+const home=document.querySelector(".home");
+
+home.addEventListener("onmousehover",()=>{
+    document.querySelectorAll(".home-paralax").forEach(element=>{
+        let speed=element.getAttribute("data-speed");
+
+        let x=(window.innerWidth-element.pageX+speed)/90;
+        let y=(window.innerHeight-element.pageY+speed)/90;
+
+        element.style.transform=`translateX(${y})  translateY(${x})`
+    })
+})
