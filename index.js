@@ -21,3 +21,22 @@ window.onscroll=()=>{
     menubtn.classList.remove("fa-times")
     navbar.classList.remove("active")
 }
+
+
+
+// ----------------login----------------------
+
+
+const loginbtn=document.getElementById("login-btn");
+const loginform= document.querySelector(".login-form-container");
+const closeform=document.querySelector("#login-form-container");
+
+loginbtn.addEventListener("click",()=>{
+     loginform.classList.add('active')
+})
+
+
+closeform.addEventListener("click",()=>{
+    loginform.classList.remove('active')
+})
+
