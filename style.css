@@ -295,7 +295,7 @@ section{
 
 .home img{
     
-    width: 66%;
+    width: 83%;
     margin: 0 auto;
     display: block;
    
@@ -305,7 +305,7 @@ section{
 @media (max-width: 440px){
     .home img{
     
-        width: 90%;
+        width: 93%;
         margin: 0 auto;
         display: block;
     }
