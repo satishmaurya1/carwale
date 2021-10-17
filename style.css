@@ -310,3 +310,64 @@ section{
         display: block;
     }
 }
+
+
+/* -----------------icons-------------------- */
+
+
+.icons-container{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+    background: #eee;
+}
+
+.icons-container .icons{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.icons-container .icons i{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    background: #eee;
+    color: var(--black);
+    text-align: center;
+}
+
+.icons-container .icons .content h3{
+    color: var(--blue);
+    font-size: 2.5rem;
+}
+
+
+.icons-container .icons .content p{
+    color: var(--lightblack);
+    font-size: 1.5rem;
+}
+
+.icons-container .icons:hover{
+   background: var(--black);
+}
+
+.icons-container .icons:hover i{
+    background: var(--blue);
+}
+
+.icons-container .icons:hover .content h3{
+    color: white;
+}
+
+.icons-container .icons:hover .content p{
+    color: white;
+}
