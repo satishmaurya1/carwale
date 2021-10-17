@@ -122,6 +122,10 @@ body{
     .header{
         padding: 2rem;
     }
+
+    section{
+        padding: 2rem;
+    }
 }
 
 @media (max-width:766px) {
@@ -144,6 +148,8 @@ body{
 
     .header .navbar.active{
         clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+        z-index: 90000;
+        background: white;
     }
 
     .header .navbar a{
@@ -266,12 +272,18 @@ body{
 
 
 /* --------------home-------------- */
+section{
+    padding: 2rem 9%;
+    
+}
+
 
 
 .home{
     padding-top: 10rem;
     text-align: center;
     overflow-x: hidden;
+   
     
 }
 
@@ -283,7 +295,7 @@ body{
 
 .home img{
     
-    width: 60%;
+    width: 66%;
     margin: 0 auto;
     display: block;
    
@@ -293,7 +305,7 @@ body{
 @media (max-width: 440px){
     .home img{
     
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
         display: block;
     }
