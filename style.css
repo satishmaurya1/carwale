@@ -309,6 +309,14 @@ section{
         margin: 0 auto;
         display: block;
     }
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
 }
 
 
@@ -467,3 +475,58 @@ section{
     font-size: .8rem;
     padding: 0 .5rem;
 }
+
+
+
+/* ------------services--------------- */
+
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 2.5rem;
+
+}
+
+.services .box-container .box{
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+}
+
+
+.services .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    color: var(--black);
+    background: var(--blue);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.services .box-container .box h3{
+    color: var(--black);
+    font-size: 2.2rem;
+
+}
+
+.services .box-container .box p{
+    color: var(--lightblack);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.services .box-container .box:hover{
+    background: var(--black);
+}
+.services .box-container .box:hover h3{
+    color: white;
+}
+.services .box-container .box:hover p{
+    color:white;
+}
+
