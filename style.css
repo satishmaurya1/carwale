@@ -638,3 +638,139 @@ section{
 .newsletter form input[type="submit"]:hover{
     background: var(--blue);
 }
+
+
+/* ------------------reviews------------------ */
+
+
+.reviews .reviews-slider{
+    padding-bottom: 3rem;
+}
+
+.reviews .reviews-slider .box{
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+    opacity: .4;
+    transform: scale(.9);
+}
+
+.reviews .reviews-slider .swiper-slide-active{
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+}
+
+.reviews .reviews-slider .box img{
+    height: 7rem;
+    width: 8rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.reviews .reviews-slider .box .content p{
+    font-size: 1.4rem;
+    color: var(--lightblack);
+    padding: 1rem 0;
+}
+
+.reviews .reviews-slider .box .content h3{
+    font-size: 2.2rem;
+    color: var(--black);
+   
+}
+
+.reviews .reviews-slider .box .content .stars i{
+    font-size: 1.7rem;
+    color: var(--blue);
+}
+
+
+/* -------------------contact---------------------- */
+
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact .row .map{
+    flex: 1 1 42rem;
+    width: 100%;
+}
+
+.contact .row form{
+    flex: 1 1 42rem;
+    padding: 2rem;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.contact .row form h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.contact .row form .box{
+    margin: .7rem 0;
+    width: 100%;
+    border: var(--border);
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    border-radius: .5rem;
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+
+
+/* --------------------footer-------------------- */
+
+.footer{
+    background-color: var(--light-blue);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    color: white;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    display: block;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: var(--black);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 1rem;
+}
+
+.footer .credit{
+    text-align: center;
+    font-size: 2rem;
+    border-top: var(--border);
+    padding: 1rem;
+    margin-top: 2rem;
+}
