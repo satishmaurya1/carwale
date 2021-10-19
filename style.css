@@ -574,3 +574,67 @@ section{
     font-size: 2.5rem;
     color: var(--black);
 }
+
+
+/* --------------------news letter------------------ */
+
+
+.newsletter{
+    padding: 6rem 2rem;
+    text-align: center;
+    background: url(./images/renditionDownload-5.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    background-color: #ffffff;
+    
+    opacity: 0.6;
+}
+
+.newsletter h3{
+    color: black;
+    font-size: 3rem;
+ 
+   
+  }
+
+.newsletter  p{
+    color: var(--lightblack);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+   
+}
+
+.newsletter form{
+    margin: 1rem auto;
+    max-width: 60rem;
+    height: 5rem;
+    display: flex;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    border-radius: 5rem;
+   
+}
+
+.newsletter form input[type="email"]{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding: 0 2rem;
+}
+
+.newsletter form input[type="submit"]{
+    height: 100%;
+    width: 17rem;
+    font-size: 1.7rem;
+    color: black;
+    background: var(--light-blue);
+    cursor: pointer;
+    
+}
+
+.newsletter form input[type="submit"]:hover{
+    background: var(--blue);
+}
